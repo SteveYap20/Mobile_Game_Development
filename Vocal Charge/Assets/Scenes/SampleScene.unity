@@ -602,8 +602,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0, y: 0.9805276, z: -0.1963815, w: 0}
-  m_LocalPosition: {x: 0.43, y: 19.91, z: 14.46}
+  m_LocalRotation: {x: 0, y: 0.9805274, z: -0.19638252, w: 0}
+  m_LocalPosition: {x: 0.31, y: 20.3, z: 24.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -727,7 +727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1468648661
 AudioSource:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4143594771807664, guid: 1d9d7e4a5882a4f1780122aa8bdda501, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.01
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4143594771807664, guid: 1d9d7e4a5882a4f1780122aa8bdda501, type: 3}
       propertyPath: m_LocalPosition.y
