@@ -5,22 +5,15 @@ using UnityEngine;
 public class DestroyOnCollision : MonoBehaviour
 {
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("gae");
-        if (collision.collider.CompareTag("Player")) {
-            Debug.Log("yeetusthefetus");
+  
+        if (collision.gameObject.CompareTag("Player")) {
+    
             Destroy(collision.gameObject);
+            Destroy(this.gameObject);
         }
 
     }
-    //    private void OnTriggerEnter(Collider other)
-    //{
-
-    //        if (other.CompareTag("Player")) {
-
-    //            Destroy(other.gameObject);
-    //        }
-    //}
 
 }
