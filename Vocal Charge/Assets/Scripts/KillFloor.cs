@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyOnCollision : MonoBehaviour
+public class KillFloor : MonoBehaviour
 {
+
     [SerializeField] private GameObject player;
     [SerializeField] private Transform respawn_point;
-    void OnTriggerEnter(Collider collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-  
-        if (collision.gameObject.CompareTag("Player")) {
-    
-            Destroy(collision.gameObject);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Destroy(other.gameObject);
             Instantiate(player, respawn_point.position, Quaternion.identity);
-            Destroy(this.gameObject);
         }
-
+        
+        //player.transform.position = respawn_point.transform.position;
     }
-
 }

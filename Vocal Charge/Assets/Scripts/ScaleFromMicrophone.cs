@@ -9,19 +9,22 @@ public class ScaleFromMicrophone : MonoBehaviour
     public Vector3 maxScale;
     public AudioDetection detector;
 
+    private AudioDetection detector2;
+
     public float loudnessSensibility = 100;
     public float threshold = 0.1f;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        detector2 = this.gameObject.GetComponent<AudioDetection>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float loudness = detector.GetLoudnessFromMicrophone() * loudnessSensibility;
+        //float loudness = detector.GetLoudnessFromMicrophone() * loudnessSensibility;
+        float loudness = detector2.GetLoudnessFromMicrophone() * loudnessSensibility;
 
         if (loudness < threshold)
             loudness = 0;
